@@ -20,24 +20,24 @@ const Testing = () => {
   return (
     <Abc.ContentWrapper>
       <Abc.Header>
-        <nav class="container pl-4 pr-4 mx-auto flex flex-col sm:flex-row justify-between items-center py-8 mt-12 sm:mt-0">
-          <div class="mb-4 sm:mb-0">
-            <a href="/" class="active--exact active">
+        <nav className="container pl-4 pr-4 mx-auto flex flex-col sm:flex-row justify-between items-center py-8 mt-12 sm:mt-0">
+          <div className="mb-4 sm:mb-0">
+            <a href="/" className="active--exact active">
               <span style={{ fontSize: '35px', color:'#2d3748'}}>Victor</span><span style={{ fontSize: '35px', color: '#8600c8', fontWeight: 'bolder',}}>Nwanguma</span>
             </a>
           </div>
-          <ul class="uppercase tracking-wide font-bold flex items-center space-x-8 sm:mr-20">
+          <ul className="uppercase tracking-wide font-bold flex items-center space-x-8 sm:mr-20">
             <li>
               <Link
                 to = "/resume"
-                class="text-copy-primary hover:text-gray-600"
+                className="text-copy-primary hover:text-gray-600"
               >
                 Resume
               </Link>
             </li>
             <li>
               <a
-                class="text-copy-primary hover:text-gray-600 cursor-pointer"
+                className="text-copy-primary hover:text-gray-600 cursor-pointer"
                 onClick={scrollToProjects}
               >
                 Projects
@@ -45,7 +45,7 @@ const Testing = () => {
             </li>
             <li>
               <a
-                class="text-copy-primary hover:text-gray-600 cursor-pointer"
+                className="text-copy-primary hover:text-gray-600 cursor-pointer"
                 onClick={scrollToContact}
               >
                 Contact
@@ -55,25 +55,25 @@ const Testing = () => {
         </nav>
       </Abc.Header>
 
-      <div class="flex-grow">
-        <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
-          <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
-            <div class="leading-snug">
-              Front-end <br class="sm:hidden"/> &amp; <br class="sm:hidden" /> Back-end <br/> Web Developer
+      <div className="flex-grow">
+        <div className="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
+          <div className="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
+            <div className="leading-snug">
+              Front-end <br className="sm:hidden"/> &amp; <br className="sm:hidden" /> Back-end <br/> Web Developer
             </div>
-            <div class="text-purple leading-snug">Welcome to my website</div>
+            <div className="text-purple leading-snug">Welcome to my website</div>
           </div>
-          <div class="mt-8 sm:mt-0">
+          <div className="mt-8 sm:mt-0">
             <img
               src="https://res.cloudinary.com/dqzxpn5db/image/upload/v1554258271/andremadarang.com/hero.svg"
               alt="hero"
-              class="mx-auto sm:mx-0"
+              className="mx-auto sm:mx-0"
             />
           </div>
         </div>
 
-        <div class="container-inner mx-auto">
-          <p class="text-lg sm:text-xl">
+        <div className="container-inner mx-auto">
+          <p className="text-lg sm:text-xl">
             Greetings! I’m Victor. I spend my days designing and developing web
             applications, and helping others on{" "}
             <a href="https://laracasts.com">Laracasts</a>. I specialize in the{" "}
@@ -81,15 +81,15 @@ const Testing = () => {
             backend, <a href="https://reactjs.org">React.js</a> on the frontend and{" "}
             <a href="https://tailwindcss.com">Tailwind CSS</a> for styling.
           </p>
-          <div class="flex justify-between items-center py-16">
-            <div class="w-full sm:w-1/2">
+          <div className="flex justify-between items-center py-16">
+            <div className="w-full sm:w-1/2">
               <img
                 src="https://res.cloudinary.com/dqzxpn5db/image/upload/v1554258271/andremadarang.com/browser.svg"
                 alt="browser"
-                class="mx-auto sm:m-0"
+                className="mx-auto sm:m-0"
               />
             </div>
-            <div class="w-1/2 hidden sm:flex justify-end">
+            <div className="w-1/2 hidden sm:flex justify-end">
               <img
                 src="https://res.cloudinary.com/dqzxpn5db/image/upload/v1554258271/andremadarang.com/mobile.svg"
                 alt="mobile"
@@ -98,13 +98,13 @@ const Testing = () => {
           </div>
         </div>
 
-        <div class="overflow-x-hidden">
-          <div class="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative" id="projectsScroll">
-            <h2 class="font-bold mb-6">
+        <div className="overflow-x-hidden">
+          <div className="projects container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 mb-16 relative" id="projectsScroll">
+            <h2 className="font-bold mb-6">
               Here are some projects I've worked on:
             </h2>
             <div
-              class="absolute right-0"
+              className="absolute right-0"
               style={{
                 top: "50px",
                 transform: "translate(100%) rotate(180deg)",
@@ -114,77 +114,68 @@ const Testing = () => {
                 <use xlinkHref="#dots-triangle"></use>
               </svg>
             </div>
-            <ul class="text-lg sm:text-xl">
-              <li class="flex mb-6">
+            <ul className="text-lg sm:text-xl">
+              <li className="flex mb-6">
               <div style={{ color: '#8600c8', fontSize: '30px',}}><HiIcons.HiBadgeCheck /></div>  
-                <div class="ml-2"><div class="mb-1">Laravel Leave-Application App</div>
-                <div class="text-base text-gray-600">
+                <div className="ml-2"><div className="mb-1">Laravel Leave-Application App</div>
+                <div className="text-base text-gray-600">
                   A Leave-Application App built with Laravel. Which enables staff of an organisation 
                   apply for leave be it, medical leave or vacation. It includes a dashboard for various departments and
                   personnels (Human Resources, HOD and Supervisors) in a organisation. where each personnel or department is involved in the 
                   stages to approval. {" "}
-                  <a href="https://github.com/drehimself/laravel-ecommerce-example">
+                  <a href="#">
                     GitHub Link
-                  </a>
-                  ,{" "}
-                  <a href="https://www.youtube.com/playlist?list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR">
-                    YouTube Link
-                  </a>{" "}
-                  or <a href="https://laravelecommerceexample.ca">Live Link</a>.
+                  </a>{' '}
+                  or <a href="https://leave-xix.herokuapp.com" target='_blank'>Live Link</a>.
                 </div></div>
               </li>
-              <li class="flex mb-6">
+              <li className="flex mb-6">
               <div style={{ color: '#8600c8', fontSize: '30px',}} ><HiIcons.HiBadgeCheck /></div> 
-                <div class="ml-2"><div class="mb-1">Driver Booking App</div>
-                <div class="text-base text-gray-600">
+                <div className="ml-2"><div className="mb-1">Driver Booking App</div>
+                <div className="text-base text-gray-600">
                   A driver booking system that lets users place bookings for
                   drivers within an organisation. An admin can also oversee all booking and manage
                   everything accordingly.{" "}
-                  <a href="https://hviorder.ca">Live Link</a>.
+                  <a href="https://driver-xix.herokuapp.com" target='_blank'>Live Link</a>.
                 </div></div>
               </li>
-              <li class="flex mb-6">
+              <li className="flex mb-6">
               <div style={{ color: '#8600c8', fontSize: '30px',}} ><HiIcons.HiBadgeCheck /></div>
-              <div class="ml-2"><div class="mb-1">React &amp; Tailwind Portfolio WebSite</div>
-                <div class="text-base text-gray-600">
+              <div className="ml-2"><div className="mb-1">React &amp; Tailwind Portfolio WebSite</div>
+                <div className="text-base text-gray-600">
                   A modern portfolio website built with React.js and Tailwind.{" "}
-                  <a href="https://github.com/drehimself/gridsome-portfolio-starter">
+                  <a href="#">
                     GitHub Link
                   </a>{" "}
                   or{" "}
-                  <a href="https://gridsome-portfolio-starter.netlify.com">
+                  <a href="#">
                     Live Link
                   </a>
                   .
                 </div></div>
                 
               </li>
-              <li class="flex mb-6">
+              <li className="flex mb-6">
               <div style={{ color: '#8600c8', fontSize: '30px',}} ><HiIcons.HiBadgeCheck /></div>   
-                <div class="ml-2"><div class="mb-1">Dracko CSS</div>
-                <div class="text-base text-gray-600">
+                <div className="ml-2"><div className="mb-1">Dracko CSS</div>
+                <div className="text-base text-gray-600">
                   A light-weight CSS framework. Initially built just for spacing, more features are to be added in the future. It started 
                   out as a minor project which is fast becoming a huge breakthrough.{" "}
-                  <a href="https://github.com/drehimself/app-store-tailwind">
+                  <a href="https://github.com/kachidk/dracko-css" target='_blank'>
                     GitHub Link
-                  </a>{" "}
-                  or{" "}
-                  <a href="https://www.youtube.com/watch?v=xTiWDVKz8u4">
-                    YouTube Link
-                  </a>
-                  .
+                  </a>.
                 </div></div>
               </li>
-              <li class="flex mb-6">
+              <li className="flex mb-6">
               <div style={{ color: '#8600c8', fontSize: '30px',}}><HiIcons.HiBadgeCheck /></div>  
-                <div class="ml-2"><div class="mb-1">Traditional Resume</div>
-                <div class="text-base text-gray-600">
+                <div className="ml-2"><div className="mb-1">Traditional Resume</div>
+                <div className="text-base text-gray-600">
                   A traditional resume built with React.js and Tailwind,{" "}
-                  <a href="/resume" class="">
+                  <a href="/resume" className="">
                     click here for HTML version
                   </a>
                   , or{" "}
-                  <a href="https://drehimself.nyc3.digitaloceanspaces.com/andre_resume.pdf">
+                  <a href="#">
                     here for PDF version
                   </a>
                 </div></div>
@@ -193,38 +184,38 @@ const Testing = () => {
           </div>
         </div>
 
-        <div class="overflow-x-hidden">
-          <div class="get-to-know-me container-inner mx-auto text-xl border-gray-500 border-b pb-16 mb-16 relative">
-            <h2 class="font-bold mb-6">Get to know me:</h2>
+        <div className="overflow-x-hidden">
+          <div className="get-to-know-me container-inner mx-auto text-xl border-gray-500 border-b pb-16 mb-16 relative">
+            <h2 className="font-bold mb-6">Get to know me:</h2>
             <div
-              class="absolute left-0"
+              className="absolute left-0"
               style={{ top: "50px", transform: "translateX(-100%)", }}
             >
               <svg width="170px" height="170px">
                 <use xlinkHref="#dots-triangle"></use>
               </svg>
             </div>
-            <div class="flex flex-col sm:flex-row justify-between items-center mb-16">
+            <div className="flex flex-col sm:flex-row justify-between items-center mb-16">
               <div>
                 <img
                   src="https://media-exp1.licdn.com/dms/image/C4E03AQEFhgA--o0xRg/profile-displayphoto-shrink_200_200/0?e=1612396800&v=beta&t=y4N_fwVcDDz-608UjJXHaM-lPCX21gkVQQ71w7thf1Y"
                   alt="avatar"
-                  class="w-32 h-32 rounded-full mb-8 lg:mb-0"
+                  className="w-32 h-32 rounded-full mb-8 lg:mb-0"
                 />
               </div>
-              <div class="flex-1 text-lg sm:text-xl ml-6">
+              <div className="flex-1 text-lg sm:text-xl ml-6">
                 I had to throw in a picture of myself somewhere on this page. If
                 you are interested in my origin story and how I got into
                 computers &amp; programming, watch the video below.
               </div>
             </div>
-            <div class="text-center text-2xl">Video coming soon...</div>
+            <div className="text-center text-2xl">Video coming soon...</div>
           </div>
         </div>
 
-        <div class="contact-me container-inner mx-auto text-xl pb-4 mb-4" id="contactScroll">
-          <h2 class="font-bold mb-6">Contact me:</h2>
-          <div class="text-lg sm:text-xl mb-16">
+        <div className="contact-me container-inner mx-auto text-xl pb-4 mb-4" id="contactScroll">
+          <h2 className="font-bold mb-6">Contact me:</h2>
+          <div className="text-lg sm:text-xl mb-16">
             If you’re looking to get in contact with me for business inquiries
             or if you have a question, feel free to{" "}
             <a href="mailto:nwangumav@gmail.com">email me</a>. I’ll try to
@@ -235,7 +226,7 @@ const Testing = () => {
         
        <FooterTopSvg /> 
        
-        <footer class="bg-background-purple1 text-white"><div class="container mx-auto flex flex-col sm:flex-row items-center justify-between py-8"><div class="mb-8 sm:mb-0">Copyright 2020. All rights reserved.</div><ul class="flex items-center space-x-8"><li><a href="mailto:nwangumav@gmail.com" class="text-white hover:text-gray-400"><MailSvg /></a></li><li><a href="https://github.com/kachidk" target="_blank" class="text-white hover:text-gray-400"><GithubSvg /> </a></li><li><a href="#" target="_blank" class="text-white hover:text-gray-400"><CodepenSvg /></a></li></ul></div></footer>
+        <footer className="bg-background-purple1 text-white"><div className="container mx-auto flex flex-col sm:flex-row items-center justify-between py-8"><div className="mb-8 sm:mb-0">Copyright 2020. All rights reserved.</div><ul className="flex items-center space-x-8"><li><a href="mailto:nwangumav@gmail.com" className="text-white hover:text-gray-400"><MailSvg /></a></li><li><a href="https://github.com/kachidk" target="_blank" className="text-white hover:text-gray-400"><GithubSvg /> </a></li><li><a href="#" target="_blank" className="text-white hover:text-gray-400"><CodepenSvg /></a></li></ul></div></footer>
       </div>
         
      <div style={{ display: "none" }}><DotsTriangle /></div>

@@ -7,6 +7,7 @@ import { SidebarData }  from './SidebarData';
 import SubMenu from './SubMenu';
 
 
+
 const NavIcon1 = styled(Link) `
     margin-left: 2rem;
     margin-top: 3rem;
@@ -77,19 +78,18 @@ const SidebarWrap = styled.div `
 
 const Sidebar = () => {
 
+
 const [sidebar, setSidebar] = useState(false) 
 
-const showSidebar = () => setSidebar(!sidebar)  
- 
+const showSidebar = () => setSidebar(!sidebar)
+
 
     return (
-        <>
-            
+        <>           
+                
                 <NavIcon1 to="#">
                     <FaIcons.FaBars onClick={showSidebar}/>
-                </NavIcon1>
-
-            
+                </NavIcon1>               
 
             <SidebarNav sidebar={sidebar}>
                 <SidebarWrap>

@@ -198,7 +198,7 @@ const Testing = () => {
             <div className="flex flex-col sm:flex-row justify-between items-center mb-16">
               <div>
                 <img
-                  src="https://media-exp1.licdn.com/dms/image/C4E03AQEFhgA--o0xRg/profile-displayphoto-shrink_200_200/0?e=1612396800&v=beta&t=y4N_fwVcDDz-608UjJXHaM-lPCX21gkVQQ71w7thf1Y"
+                  src="https://media-exp1.licdn.com/dms/image/C4E03AQEsSH-HF4xeYw/profile-displayphoto-shrink_200_200/0/1606828105402?e=1615420800&v=beta&t=0Ek81IBoRBDUU9O7aPeVRof2rPJOW06pDYNp7EAW1tY"
                   alt="avatar"
                   className="w-32 h-32 rounded-full mb-8 lg:mb-0"
                 />

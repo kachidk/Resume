@@ -123,7 +123,7 @@ const Testing = () => {
                   apply for leave be it, medical leave or vacation. It includes a dashboard for various departments and
                   personnels (Human Resources, HOD and Supervisors) in a organisation. where each personnel or department is involved in the 
                   stages to approval. {" "}
-                  <a href="#">
+                  <a href="https://github.com/kachidk/LeaveApp">
                     GitHub Link
                   </a>{' '}
                   or <a href="https://leave-xix.herokuapp.com" target='_blank'>Live Link</a>.
@@ -136,19 +136,22 @@ const Testing = () => {
                   A driver booking system that lets users place bookings for
                   drivers within an organisation. An admin can also oversee all booking and manage
                   everything accordingly.{" "}
+                  <a href="https://github.com/kachidk/DriverApp">
+                    GitHub Link
+                  </a>{' '}or 
                   <a href="https://driver-xix.herokuapp.com" target='_blank'>Live Link</a>.
                 </div></div>
               </li>
               <li className="flex mb-6">
               <div style={{ color: '#8600c8', fontSize: '30px',}} ><HiIcons.HiBadgeCheck /></div>
-              <div className="ml-2"><div className="mb-1">React &amp; Tailwind Portfolio WebSite</div>
+              <div className="ml-2"><div className="mb-1">React Portfolio WebSite</div>
                 <div className="text-base text-gray-600">
                   A modern portfolio website built with React.js and Tailwind.{" "}
-                  <a href="#">
+                  <a href="https://github.com/kachidk/Resume">
                     GitHub Link
                   </a>{" "}
                   or{" "}
-                  <a href="#">
+                  <a href="https://victor-xix.herokuapp.com">
                     Live Link
                   </a>
                   .

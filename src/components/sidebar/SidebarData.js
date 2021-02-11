@@ -1,40 +1,39 @@
 import React from 'react';
-import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
-import * as IoIcons from 'react-icons/io';
-import * as RiIcons from 'react-icons/ri';
-import * as CgIcons from 'react-icons/cg';
-import * as HiIcons from 'react-icons/hi';
+import {AiFillHome} from 'react-icons/ai';
+import {IoMdContact} from 'react-icons/io';
+import {RiArrowUpSFill, RiArrowDownSFill} from 'react-icons/ri';
+import {CgFileDocument} from 'react-icons/cg';
+import {HiOutlineDesktopComputer} from 'react-icons/hi';
 
 export const SidebarData = [
     {
         title: 'Home',
         path: '/',
-        icon: <AiIcons.AiFillHome />,
-        iconClosed: <RiIcons.RiArrowDownSFill />,
-        iconOpen: <RiIcons.RiArrowUpSFill />,       
+        icon: <AiFillHome />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpen: <RiArrowUpSFill />,       
     },
 
     {
         title: 'Resume',
         path: '/resume',
-        icon: <CgIcons.CgFileDocument />,
-        iconClosed: <RiIcons.RiArrowDownSFill />,
-        iconOpen: <RiIcons.RiArrowUpSFill />,
+        icon: <CgFileDocument />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpen: <RiArrowUpSFill />,
     },
     
     {
         title: 'Projects',
-        path: '/',
-        icon: <HiIcons.HiOutlineDesktopComputer />,
+        path: '/projects',
+        icon: <HiOutlineDesktopComputer />,
     },
 
     {
         title: 'Contact',
-        path: '/',
-        icon: <IoIcons.IoMdContact />,
-        iconClosed: <RiIcons.RiArrowDownSFill />,
-        iconOpen: <RiIcons.RiArrowUpSFill />,
+        path: '/contact',
+        icon: <IoMdContact />,
+        iconClosed: <RiArrowDownSFill />,
+        iconOpen: <RiArrowUpSFill />,
         
         // subNav: [
         //     {
@@ -56,6 +55,5 @@ export const SidebarData = [
         //     },
         // ]
     },
-
 ]
 

@@ -18,12 +18,14 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "build:css": "postcss src/styles/tailwind.css -o src/styles/main.css",
+    "build:css": "postcss build src/styles/tailwind.css -o src/styles/main.css",
     "watch:css": "postcss src/styles/tailwind.css -o src/styles/main.css -w",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "commit": "git add . && git commit -m '.' && git push origin master",
+    "deploy": "npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [

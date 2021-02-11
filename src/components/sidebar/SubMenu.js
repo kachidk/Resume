@@ -19,6 +19,9 @@ const SidebarLink = styled(Link)`
         color: #8600c8;
         cursor: pointer;
     }
+    @media (max-width: 768px ){
+        justify-content: center;
+    }
 `;
 
 const SidebarLabel = styled.span `
@@ -50,7 +53,7 @@ const DropdownLink = styled(Link) `
 `;
 
 
-const SubMenu = ({ abc }) => {
+const SubMenu = ({ abc, showSidebar }) => {
     const [subnav, setSubnav] = useState(false)
 
     const showSubnav = () => setSubnav(!subnav)
@@ -58,7 +61,7 @@ const SubMenu = ({ abc }) => {
     return (
         <>
           <SidebarLink to={abc.path} onClick={abc.subNav && 
-                    showSubnav}>
+                    showSubnav} onClick={showSidebar}>
                 <div>
                     <Dflex>
                         {abc.icon}

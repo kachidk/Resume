@@ -1,31 +1,30 @@
-import './App.css';
-import Sidebar from './components/sidebar/Sidebar';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './pages/Home';
-import Resume from './pages/Resume.js';
-import Projects from './pages/Projects.js';
-import C404 from './pages/C404.js';
-import Contact from './pages/Contact';
-
-
+import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import Resume from "./pages/Resume.js";
+import Projects from "./pages/Projects.js";
+import C404 from "./pages/C404.js";
+import Contact from "./pages/Contact";
+import Layout from "./Layout/Layout";
+// import Test from "./pages/Test";
 
 function App() {
   return (
     <div className="bg-white">
       <Router>
-        <Sidebar />
+        <Layout>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route  path="/resume" component={Resume} />
-            <Route  path="/projects" component={Projects} />
+            <Route path="/resume" component={Resume} />
+            <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
+            {/* <Route path="/test" component={Test} /> */}
             <Route component={C404} />
           </Switch>
+        </Layout>
       </Router>
     </div>
-    
   );
 }
 
 export default App;
-

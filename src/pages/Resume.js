@@ -1,22 +1,24 @@
 import React from "react";
 
-const Resume = () => {
+function Resume() {
   return (
-    <div className="resume">
+    <div className="mb-16 resume">
       <div className="container">
         <section>
           <div>
             <div>
               <img
                 src="https://media-exp1.licdn.com/dms/image/C4E03AQEsSH-HF4xeYw/profile-displayphoto-shrink_200_200/0/1606828105402?e=1615420800&v=beta&t=0Ek81IBoRBDUU9O7aPeVRof2rPJOW06pDYNp7EAW1tY"
-                alt="avatar"
+                alt=""
                 className="avatar"
               />
             </div>
           </div>
           <div>
             <div className="my-name">Victor Nwanguma</div>
-            <div className="my-title">Front-end &amp; Back-end Web Developer</div>
+            <div className="my-title">
+              Front-end &amp; Back-end Web Developer
+            </div>
             <div className="links">
               <div className="link-item">
                 <svg
@@ -26,7 +28,7 @@ const Resume = () => {
                 >
                   <path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"></path>
                 </svg>
-                <a href="https://victor-x.web.app">nwanguma.com</a>
+                <a href="https://victor-x.web.app">victor-x.web.app</a>
               </div>
               <div className="link-item">
                 <svg
@@ -45,8 +47,8 @@ const Resume = () => {
               is one that requires constant education throughout your entire
               career. This is exciting to me as there will always be new things
               to learn and new challenges to overcome. I primarily specialize on
-              Laravel and Vue, with emphasis on the Laravel PHP framework
-              and the ecosystem that surrounds it.
+              Laravel and React, with emphasis on the Laravel PHP framework and
+              the ecosystem that surrounds it.
             </p>
           </div>
         </section>
@@ -75,17 +77,19 @@ const Resume = () => {
               <div className="job-title-container">
                 <div>
                   <div className="job-company">XOWN Solutions</div>
-                  <div className="job-title">Student Intern | Front End Developer</div>
+                  <div className="job-title">
+                    Student Intern | Front End Developer
+                  </div>
                 </div>
                 <div>Oct 2020 - Nov 2020</div>
               </div>
               <p>
-                Worked on several projects ranging from designing websites for clients
-                and worked on React.js Projects. Responsibilities included implementing new
-                features, website design, co-ordinating with other
-                developers and project supervisors, improving code quality,
-                improving existing projects and delvering the needs of our
-                clients.
+                Worked on several projects ranging from designing websites for
+                clients and worked on React.js Projects. Responsibilities
+                included implementing new features, website design,
+                co-ordinating with other developers and project supervisors,
+                improving code quality, improving existing projects and
+                delvering the needs of our clients.
               </p>
             </div>
             <div className="job">
@@ -94,18 +98,18 @@ const Resume = () => {
                   <div className="job-company">
                     BUA INT'L Limited | Headquaters Lagos Nigeria
                   </div>
-                  <div className="job-title">
-                    Student Intern
-                  </div>
+                  <div className="job-title">Student Intern</div>
                 </div>
                 <div>Mar 2020 - Aug 2020</div>
               </div>
               <p>
-                Responsible for maintaining and proving IT support for
-                several departments and personnel. I gained experience and knowledge from my superiors in all aspects
-                including project management and design techniques, and also good team collaboration and rapour in projects. Furthermore, I
-                automated repetitive tasks to make things easier to accomplish
-                (i.e. application for medical or vacation leave, booking of drivers in an organisation, etc.).
+                Responsible for maintaining and proving IT support for several
+                departments and personnel. I gained experience and knowledge
+                from my superiors in all aspects including project management
+                and design techniques, and also good team collaboration and
+                rapour in projects. Furthermore, I automated repetitive tasks to
+                make things easier to accomplish (i.e. application for medical
+                or vacation leave, booking of drivers in an organisation, etc.).
               </p>
             </div>
           </div>
@@ -117,7 +121,8 @@ const Resume = () => {
               <div className="job-title-container">
                 <div>
                   <div className="job-company">
-                    Honours Bachelor of Science in Computer Science Covenant University
+                    Honours Bachelor of Science in Computer Science Covenant
+                    University
                   </div>
                   <div className="job-title">Specialist: Computer Science</div>
                 </div>
@@ -148,7 +153,8 @@ const Resume = () => {
               </ul>
             </div>
             <p>
-              I also enjoy helping or providing assistance to others, send me an Email at <br />
+              I also enjoy helping or providing assistance to others, send me an
+              Email at <br />
               <a href="mailto:nwangumav@gmail.com" className="font-bold">
                 nwangumav@gmail.com
               </a>
@@ -165,8 +171,8 @@ const Resume = () => {
                 height="46.898"
               >
                 <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                  fillRule="evenodd"
+                  clipRule="evenodd"
                   fill="#404041"
                   d="M35.698 1.248c1.1.756 1.863 1.549 2.236 2.381-.483.807-1.121 1.707-1.914 2.68a11.816 11.816 0 0 1-2.636 2.397l-.612.044-6.941 10.705c1.599 1.244 2.674 2.461 3.219 3.68.725 1.749.631 3.288-.27 4.597-.909 1.321-1.721 2.154-2.436 2.537-1.298.641-2.02 1.055-2.145 1.238-.559.813-.74 1.76-.578 2.852.333 2.318-.046 4.826-1.131 7.542-1.079 2.701-3.324 4.353-6.742 4.929-2.109.374-5.115-.782-9.035-3.443C2.788 40.65.632 38.258.262 36.176c-.709-3.414.018-6.109 2.169-8.071 2.163-1.978 4.367-3.228 6.653-3.746 1.073-.241 1.896-.745 2.455-1.559.125-.183.254-1.006.402-2.437.062-.832.553-1.887 1.471-3.2.914-1.3 2.33-1.93 4.248-1.862 1.257.024 2.766.581 4.551 1.667l7.547-10.289-.216-.613a11.739 11.739 0 0 1 1.29-3.325c.61-1.101 1.221-2.016 1.828-2.74.91.053 1.925.484 3.038 1.247zM20.766 22.721c-1.915-1.317-3.477-1.037-4.702.852-1.316 1.913-1.035 3.518.855 4.817 1.877 1.293 3.474.979 4.789-.935 1.226-1.889.908-3.461-.942-4.734zM7.726 34.247l-.836 1.26 6.879 4.733.859-1.247-6.902-4.746zM31.107 5.036c.141.062.262.017.378-.153.114-.167.089-.313-.086-.431-.184-.129-.342-.108-.455.056-.117.171-.104.307.014.427l-.816 2.06L8.9 36.319l.149.102 21.229-29.33.829-2.055zm1.927-2.96l-2.213 5.387-20.837 29.6.188.132L30.97 7.565l2.214-5.388c.141.061.269.008.377-.15.117-.169.087-.313-.085-.431-.185-.125-.342-.114-.459.056-.109.158-.099.306.017.424zm2.681 1.842c.14.061.269.008.38-.15.115-.17.084-.313-.089-.431-.185-.129-.341-.114-.456.056-.11.158-.102.307.018.424l-4.016 4.15L11.11 37.839l.146.102 20.44-29.875 4.019-4.148zM33.9 6.958c.177.085.321.057.439-.113.114-.167.073-.321-.11-.447-.175-.121-.319-.091-.434.072-.099.147-.102.255-.018.348l-1.534 1.624-20.046 30.145.134.092L32.377 8.533 33.9 6.958z"
                 ></path>
@@ -203,7 +209,7 @@ const Resume = () => {
                 width="49.3"
                 height="46.911"
               >
-                <g fill-rule="evenodd" clip-rule="evenodd" fill="#404041">
+                <g fillRule="evenodd" clipRule="evenodd" fill="#404041">
                   <path d="M44.272 33.393c.221-5.18-.505-9.533-2.86-10.408-.225-.087-1.021-.357-1.559-.393-3.771-.269-4.484 4.378-4.734 10.156-.25 5.775.06 10.496 3.831 10.762.536.037 1.35-.117 1.577-.168 2.411-.543 3.517-4.767 3.745-9.949z"></path>
                   <path d="M46.993 23.538c-.55-1.125-.995-1.786-1.376-2.203.121-.438.059-.906.059-.906a.821.821 0 0 0-.303-.472c-.398-1.533-1.262-5.031-3.625-8.836a25.78 25.78 0 0 0-.533-.82c.962-.264 1.55-1.009.958-2.144C37.977 3.176 31.619 0 24.501 0 17.51 0 11.254 3.072 7.057 7.908c-.5.918-.032 1.768.832 2.154-.247.355-.484.71-.699 1.059-2.361 3.805-3.225 7.303-3.623 8.835a.822.822 0 0 0-.303.473s-.068.528.086.987c-.44.373-.962 1.098-1.633 2.698C-.409 29.18-.271 36.27.581 39.323c.851 3.051 2.46 5.414 3.997 6.406 2.718 1.758 4.365 1.092 5.084.889.84-.24 1.003-1.197.834-2.518.284.016.594.02.842-.018 3.75-.539 3.796-5.271 3.228-11.018-.57-5.746-1.543-10.333-5.292-9.796-.533.075-1.311.406-1.531.507-2.304 1.043-2.788 5.441-2.277 10.6.512 5.152 1.854 9.287 4.289 9.648.02.004.066.01.096.012a7.867 7.867 0 0 1-1.212-.08c-2.437-.367-3.777-4.5-4.286-9.652-.467-4.691-.09-8.725 1.711-10.205-.38-1.426-.793-2.504-1.258-2.933a1.285 1.285 0 0 0-.008-.337c.234-1.117 1.18-5.06 3.609-8.955.365-.587.759-1.121 1.156-1.652a3.424 3.424 0 0 0 1.273-.563 23.12 23.12 0 0 1 13.665-4.432c5.208 0 10.008 1.701 13.851 4.568.328.222.691.377 1.062.479.382.515.766 1.032 1.12 1.601 2.281 3.658 3.254 7.362 3.558 8.725-.533.125-.958 1.146-1.308 2.639 2.308 1.047 2.789 5.442 2.28 10.598-.514 5.154-1.854 9.285-4.288 9.654a7.582 7.582 0 0 1-1.213.072c.018-.027.034-.059.081-.072-.05.004-.139.016-.241.025.013.025.013.023.023.045h-.03c-.2 1.625-.047 2.814.92 3.018.727.15 2.409.691 5.024-1.252 1.478-1.107 2.952-3.578 3.632-6.688.681-3.112.426-10.196-1.979-15.1z"></path>
                 </g>
@@ -262,7 +268,7 @@ const Resume = () => {
                 width="24.944"
                 height="47.432"
               >
-                <g fill-rule="evenodd" clip-rule="evenodd" fill="#404041">
+                <g fillRule="evenodd" clipRule="evenodd" fill="#404041">
                   <path d="M23.58 19.705c-.453.457-2.572 0-2.572 0v26.168c0 1.043-.84 1.559-2.529 1.559-1.807 0-2.705-.516-2.705-1.559V19.705s-1.965.427-2.391 0c-3.068-3.078 0-17.432 0-17.432L14.115 0l.537 2.273v10.77h3.131V2.273L18.494 0l.711 2.273v10.77h2.922V2.273L22.867 0l.713 2.273s3.07 14.354 0 17.432zM7.062 45.973c0 .977-.746 1.459-2.242 1.459-1.693 0-2.541-.482-2.541-1.459V27.788L.304 23.619S-2.182 5.822 7.062 0c-.268 7.881 0 45.973 0 45.973z"></path>
                 </g>
               </svg>
@@ -272,6 +278,6 @@ const Resume = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Resume;

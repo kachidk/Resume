@@ -1,18 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { HiBadgeCheck } from "react-icons/hi";
-import { DotsTriangle } from "../styled/Svgs.js";
-import { Header } from "../styled/HomePage";
+import { DotsTriangle } from "../assets/svgs/Svgs.js";
 
 export default function Projects() {
   return (
     <>
-    <Header/>
-      <div className="container">
+      <div className="container mx-auto">
         <section>
           <div className="overflow-x-hidden">
-            <div
-              className="relative py-16 mx-auto mb-16 text-xl border-t border-b border-gray-500 projects container-inner"
-            >
+            <div className="relative py-16 mx-auto mb-16 text-xl border-t border-b border-gray-500 projects container-inner">
               <h2 className="mb-6 font-bold">
                 Here are some projects I've worked on:
               </h2>
@@ -45,7 +42,11 @@ export default function Projects() {
                         GitHub Link
                       </a>{" "}
                       or{" "}
-                      <a href="https://leave-xix.herokuapp.com" target="_blank">
+                      <a
+                        href="https://leave-xix.herokuapp.com"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Live Link
                       </a>
                       .
@@ -69,6 +70,7 @@ export default function Projects() {
                       <a
                         href="https://driver-xix.herokuapp.com"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         Live Link
                       </a>
@@ -107,6 +109,7 @@ export default function Projects() {
                       <a
                         href="https://github.com/kachidk/dracko-css"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         GitHub Link
                       </a>
@@ -122,22 +125,50 @@ export default function Projects() {
                     <div className="mb-1">Traditional Resume</div>
                     <div className="text-base text-gray-600">
                       A traditional resume built with React.js and Tailwind,{" "}
-                      <a href="/resume" className="">
+                      <Link to="/resume" className="">
                         click here for HTML version
+                      </Link>
+                      , or <a href="/projects">here for PDF version</a>
+                    </div>
+                  </div>
+                </li>
+                <li className="flex mb-6">
+                  <div style={{ color: "#8600c8", fontSize: "30px" }}>
+                    <HiBadgeCheck />
+                  </div>
+                  <div className="ml-2">
+                    <div className="mb-1">Metro Sports</div>
+                    <div className="text-base text-gray-600">
+                      A sports app built with React.js{" "}
+                      <a href="https://metro-x.web.app" className="">
+                        Live Link.
                       </a>
-                      , or <a href="#">here for PDF version</a>
+                    </div>
+                  </div>
+                </li>
+                <li className="flex mb-6">
+                  <div style={{ color: "#8600c8", fontSize: "30px" }}>
+                    <HiBadgeCheck />
+                  </div>
+                  <div className="ml-2">
+                    <div className="mb-1">Pixel movies</div>
+                    <div className="text-base text-gray-600">
+                      A Movie app displaying details about movies{" "}
+                      <a href="https://pixel-m.web.app" className="">
+                        Live Link.
+                      </a>
                     </div>
                   </div>
                 </li>
               </ul>
               <div
-            className="absolute bottom-0 left-0"
-            style={{ bottom: "50px", transform: "translateX(-100%)" }}
-          >
-            <svg width="170px" height="170px">
-              <use xlinkHref="#dots-triangle"></use>
-            </svg>
-          </div>
+                className="absolute bottom-0 left-0"
+                style={{ bottom: "50px", transform: "translateX(-100%)" }}
+              >
+                <svg width="170px" height="170px">
+                  <use xlinkHref="#dots-triangle"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </section>

@@ -1,11 +1,12 @@
 import React from "react";
 import { DotsTriangle } from "../assets/svgs/Svgs.js";
-import img from "../assets/images/black.jpg";
+import Image from "next/image";
+import blackPic from "../assets/images/black.jpg";
 
 function Contact() {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container-inner">
         <section>
           <div className="overflow-x-hidden">
             <div className="relative pb-16 mx-auto mb-16 text-xl border-t border-b border-gray-500 get-to-know-me container-inner">
@@ -23,10 +24,12 @@ function Contact() {
               <h2 className="mt-8 mb-6 font-bold">Get to know me:</h2>
               <div className="flex flex-col items-center justify-between mb-16 sm:flex-row">
                 <div>
-                  <img
-                    src={img}
+                  <Image
+                    src={blackPic}
                     alt=""
-                    className="w-32 h-32 mb-8 rounded-full lg:mb-0"
+                    height={128}
+                    width={128}
+                    className="mb-8 rounded-full lg:mb-0"
                   />
                 </div>
                 <div className="flex-1 ml-6 text-lg sm:text-xl">

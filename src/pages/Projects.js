@@ -1,17 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import { HiBadgeCheck } from "react-icons/hi";
 import { DotsTriangle } from "../assets/svgs/Svgs.js";
 
 export default function Projects() {
   return (
     <>
-      <div className="container mx-auto">
+      <div className="container-inner">
         <section>
           <div className="overflow-x-hidden">
             <div className="relative py-16 mx-auto mb-16 text-xl border-t border-b border-gray-500 projects container-inner">
               <h2 className="mb-6 font-bold">
-                Here are some projects I've worked on:
+                Here are some projects I&apos;ve worked on:
               </h2>
               <div
                 className="absolute right-0"
@@ -125,7 +125,7 @@ export default function Projects() {
                     <div className="mb-1">Traditional Resume</div>
                     <div className="text-base text-gray-600">
                       A traditional resume built with React.js and Tailwind,{" "}
-                      <Link to="/resume" className="">
+                      <Link href="/resume" className="">
                         click here for HTML version
                       </Link>
                       , or <a href="/projects">here for PDF version</a>

@@ -6,13 +6,7 @@ function Resume() {
       <div className="container">
         <section>
           <div>
-            <div>
-              <img
-                src="https://media-exp1.licdn.com/dms/image/C4E03AQEsSH-HF4xeYw/profile-displayphoto-shrink_200_200/0/1606828105402?e=1615420800&v=beta&t=0Ek81IBoRBDUU9O7aPeVRof2rPJOW06pDYNp7EAW1tY"
-                alt=""
-                className="avatar"
-              />
-            </div>
+            <div>{/* image here */}</div>
           </div>
           <div>
             <div className="my-name">Victor Nwanguma</div>
@@ -96,7 +90,7 @@ function Resume() {
               <div className="job-title-container">
                 <div>
                   <div className="job-company">
-                    BUA INT'L Limited | Headquaters Lagos Nigeria
+                    BUA INT&apos;L Limited | Headquaters Lagos Nigeria
                   </div>
                   <div className="job-title">Student Intern</div>
                 </div>

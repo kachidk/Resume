@@ -7,7 +7,7 @@ function Layout(props) {
     <div className="flex flex-col justify-between h-screen">
       <div>
         <Header />
-        {props.children}
+        <div>{props.children}</div>
       </div>
       <Footer />
     </div>

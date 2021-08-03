@@ -1,0 +1,41 @@
+[debug] [2021-08-02T09:36:33.002Z] ----------------------------------------------------------------------
+[debug] [2021-08-02T09:36:33.005Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Victor\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-08-02T09:36:33.005Z] CLI Version:   9.2.1
+[debug] [2021-08-02T09:36:33.005Z] Platform:      win32
+[debug] [2021-08-02T09:36:33.005Z] Node Version:  v15.8.0
+[debug] [2021-08-02T09:36:33.007Z] Time:          Mon Aug 02 2021 10:36:33 GMT+0100 (West Africa Standard Time)
+[debug] [2021-08-02T09:36:33.007Z] ----------------------------------------------------------------------
+[debug] [2021-08-02T09:36:33.007Z] 
+[debug] [2021-08-02T09:36:33.017Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-02T09:36:33.018Z] > authorizing via signed-in user
+[debug] [2021-08-02T09:36:33.018Z] [iam] checking project victor-x for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-02T09:36:33.022Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/victor-x:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-02T09:36:54.870Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. socket hang up
+[debug] [2021-08-02T09:36:54.872Z] > refreshing access token with scopes: []
+[debug] [2021-08-02T09:36:54.873Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-02T09:37:06.335Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2021-08-02T09:37:27.811Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\Victor\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\Victor\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\github.js:11:16)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1137:10)
+    at Module.load (node:internal/modules/cjs/loader:973:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:813:14)
+    at Module.require (node:internal/modules/cjs/loader:997:19)
+    at require (node:internal/modules/cjs/helpers:92:18)
+    at Object.<anonymous> (C:\Users\Victor\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:5:24)
+    at Module._compile (node:internal/modules/cjs/loader:1108:14)
+[error] 
+[error] Error: Failed to get Firebase project victor-x. Please make sure the project exists and your account has permission to access it.
